@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* some common classes */
+
+
+/* header styles */
+header{
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    margin: 0 240px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo-title {
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+.logo-title span {
+    color: #FF42A5;
+}
+.logo img{
+    width: 86.041px;
+    height: 40px;
+}
+.menu-bar a{
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 24px;
+}
+.follow-btn{
+    padding:16px 24px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.fa-youtube{
+    font-size: 26px;
+}
+.fa-tiktok{
+    font-size: 21px;
+    margin-left: 16px;
+}
+
+
+/* style for small devices */
+@media screen and (max-width:576px){
+    header {
+        box-shadow:none;
+    }
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin:0px;
+    }
+    .logo-title {
+        font-size: 25px;
+    }
+    .logo img {
+        width: 40px;
+        height: auto;
+    }
+    .logo{
+        margin-top: 35px;
+        gap:10px;
+    }
+    .menu-bar a {
+        display: block;
+        text-align: center;
+        margin-right: 0px;
+        margin: 20px 0px;
+    }
+
+    .follow-btn .btn-name{
+        margin-right: 16px;
+    }
+}
+
+/* style for tablet */
+@media screen and (min-width:576px) and (max-width:992px){
+    nav {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin: 0px;
+        }
+    
+    .logo {
+        margin-top: 35px;
+        gap: 10px;
+    }
+    .menu-bar a {
+        display: block;
+        text-align: center;
+        margin-right: 0px;
+        margin: 20px 0px;
+    }
+    .follow-btn .btn-name {
+        margin-right: 16px;
+    }
+
+}
