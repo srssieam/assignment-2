@@ -575,8 +575,8 @@ footer  p{
     font-weight: 600;
     padding: 0px 20px;
 }
-.footer-icon i{
-    font-size: 20px;
+.footer-icon {
+    font-size: 8px;
 }
 }
 
