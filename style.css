@@ -9,7 +9,21 @@ body{
 }
 
 /* some common classes */
-
+.btn{
+    padding: 20px 40px;
+    background:#FF42A5;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 48px;
+    border: none;
+    text-transform: uppercase;
+}
+.gradient{
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 /* header styles */
 header{
@@ -64,9 +78,57 @@ nav{
     margin-left: 16px;
 }
 
+/* top banner styles */
+.banner-top{
+    background-image: url("images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-position:left;
+}
+.banner-top-container{
+    margin: 0 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-banner-content, .top-banner-img{
+    width: 50%;
+}
+.top-banner-img img{
+    width: 100%;
+}
+.top-banner-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.goat{
+    font-size: 95px;
+    font-weight: 800;
+}
+.top-banner-content p{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 17px 0px 17px 0px;
+}
+.top-banner-content i{
+    margin-right: 12px;
+}
+.sky-btn{
+    margin-left: 24px;
+    background-color: #4EC5F7;
+}
+.banner-btn{
+    margin-top: 41px;
+}
 
 /* style for small devices */
 @media screen and (max-width:576px){
+    .btn{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
     header {
         box-shadow:none;
     }
@@ -92,23 +154,90 @@ nav{
         display: block;
         text-align: center;
         margin-right: 0px;
+        font-size: 14px;
         margin: 20px 0px;
     }
+    .follow-btn {
+        padding: 10px 16px;
+        }
+    
+        .fa-youtube {
+            font-size: 15px;
+        }
+    
+        .fa-tiktok {
+            font-size: 13px;
+            margin-left: 10px;
+        }
 
     .follow-btn .btn-name{
-        margin-right: 16px;
+        margin-right: 12px;
     }
+    .banner-top-container {
+        margin: 0px;
+        flex-direction: column-reverse;
+        justify-content:center;
+    }
+    .top-banner-content,
+    .top-banner-img {
+        width: auto;
+    }
+    .top-banner-img {
+        margin: 10px 50px 0px 50px;
+    }
+    .top-banner-content{
+        margin:20px;
+        background-image: url("images/Group\ 14.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 30px 50px;
+    }
+    .banner-top {
+        background-image:none;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    .top-banner-title {
+        font-size: 25px;
+    }
+    
+    .goat {
+        font-size: 55px;
+    }
+    
+    .top-banner-content p {
+        font-size: 12px;
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .top-banner-content i {
+        margin-right: 8px;
+    }
+    .banner-btn {
+        margin-top: 25px;
+    }
+    .sky-btn {
+        margin-left: 5px;
+    }
+
 }
 
 /* style for tablet */
 @media screen and (min-width:576px) and (max-width:992px){
+    .btn {
+        padding: 15px 20px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 48px;
+    }
     nav {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: auto;
-            margin: 0px;
-        }
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0px;
+    }
     
     .logo {
         margin-top: 35px;
@@ -122,6 +251,38 @@ nav{
     }
     .follow-btn .btn-name {
         margin-right: 16px;
+    }
+    .banner-top-container {
+        margin:0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .top-banner-title {
+        font-size: 30px;
+    }
+    .goat {
+        font-size: 50px;
+        font-weight: 800;
+    }
+    
+    .top-banner-content p {
+        font-size: 16px;
+        margin: 15px 0px 15px 0px;
+    }
+    
+    .top-banner-content i {
+        margin-right: 12px;
+    }
+    
+    .sky-btn {
+        margin-left: 15px;
+        background-color: #4EC5F7;
+    }
+    
+    .banner-btn {
+        margin-top: 20px;
     }
 
 }
