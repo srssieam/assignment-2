@@ -145,9 +145,15 @@ nav{
     gap: 10px;
     padding: 95px 240px;
 }
-
+.banner-bottom-img{
+    max-width: 70%;
+}
+.banner-bottom-img img{
+    width: 100%;
+}
 .banner-bottom-content{
     text-align: right;
+    max-width: 30%;
 }
 .banner-bottom-content h2{
     font-size: 48px;
@@ -445,11 +451,17 @@ footer  p{
         flex-direction: column;
         padding: 10px 20px;
     }
-    .banner-bottom-img img{
+    .banner-bottom-img {
+        max-width: 100%;
+    }
+    
+    .banner-bottom-img img {
         width: 100%;
     }
+
     .banner-bottom-content {
         text-align: center;
+        max-width: 100%;
     }
     
     .banner-bottom-content h2 {
@@ -656,12 +668,17 @@ footer  p{
         padding: 20px 35px;
     }
     
+    .banner-bottom-img {
+        max-width: 100%;
+    }
+    
     .banner-bottom-img img {
         width: 100%;
     }
     
     .banner-bottom-content {
         text-align: center;
+        max-width: 100%;
     }
     
     .banner-bottom-content h2 {
