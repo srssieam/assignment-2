@@ -249,6 +249,95 @@ nav{
 .play p{
     margin-top: 24px;
 }
+/* catagories style */
+.catagories{
+    padding: 120px 230px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.catagories button{
+    color: #0B0223;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+.catagories button:hover{
+    border: 2px solid #FF42A5;
+    border-radius: 50px;
+}
+.catagories button >img{
+    margin-right: 10px;
+}
+
+/* footer styles */
+footer{
+    background: #0B0223;
+    align-items: center;
+    padding: 120px 240px;
+}
+.footer-link, .footer-logo, .footer-icon, .footer-condition{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.f-logo {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;/
+}
+
+.f-logo-title {
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+
+}
+
+.f-logo-title span {
+    color: #FF42A5;
+}
+
+.f-logo img {
+    width: 86.041px;
+    height: 40px;
+}
+.footer-link, .footer-conditions{
+    padding: 56px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:60px;
+} 
+.footer-link a, .footer-conditions a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-link a{
+    color: white;
+}
+.footer-conditions a{
+    color: rgba(255, 255, 255, 0.60);
+}
+.footer-conditions{
+    padding-bottom: 28px;
+}
+footer  p{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+}
+
 
 
 /* style for small devices */
@@ -443,9 +532,65 @@ nav{
     .play p {
             margin-top: 24px;
     }
-
-
+    .catagories {
+        padding:50px 25px;
+        gap: 5px;
+    }
+    .catagories button img{
+        width: 20px;
+    }
+    
+    .catagories button {
+        font-size: 10px;
+        font-weight: 600;
+        padding: 5px;
+    }
+    .catagories button img {
+        margin-right: 5px;
+    }
+footer{
+    padding: 60px;
 }
+.footer-link, .footer-logo, .footer-icon, .footer-condition{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.f-logo {
+    gap: 10px;/
+}
+
+.f-logo-title {
+    font-size: 25px;
+}
+.f-logo img {
+    width: 50px;
+    height: auto;
+}
+.footer-link, .footer-conditions{
+    padding: 30px;
+    gap:15px;
+} 
+.footer-link a, .footer-conditions a{
+    font-size: 12px;
+    font-weight: 400;
+}
+.footer-conditions{
+    padding-bottom: 20px;
+}
+footer  p{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0px 20px;
+}
+.footer-icon i{
+    font-size: 20px;
+}
+}
+
+
+
 
 /* style for tablet */
 @media screen and (min-width:576px) and (max-width:992px){
@@ -557,66 +702,123 @@ nav{
         gap: 0px;
     }
     
-        .play-content,
-        .play-img {
+    .play-content,
+    .play-img {
             width: 50%;
-        }
+    }
     
-        .play-img .full-img {
-            width: 100%;
-        }
+    .play-img .full-img {
+        width: 100%;
+    }
     
-        .play-content {
-            padding: 0px 60px;
-            text-align: right;
-        }
+    .play-content {
+        padding: 0px 60px;
+        text-align: right;
+    }
     
-        .play-img {
-            position: relative;
-        }
+    .play-img {
+        position: relative;
+    }
     
-        .side-img {
-            position: absolute;
-            bottom: -10%;
-            left: -20%;
-            width: 45%;
-        }
+    .side-img {
+        position: absolute;
+        bottom: -10%;
+        left: -20%;
+        width: 45%;
+    }
     
-        .play {
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0px 40px;
-            gap: 0px;
-        }
+    .play {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 40px;
+        gap: 0px;
+    }
         
-        .play-content {
-            padding: 0px;
-            text-align: center;
-        }
+    .play-content {
+        padding: 0px;
+        text-align: center;
+    }
         
-        .play-content {
-            width: auto;
-        }
+    .play-content {
+        width: auto;
+    }
         
-        .play-img {
-            width: 100%;
-            margin-top: 15px;
-            position: relative;
-            text-align: right;
-            padding-right: 80px;
-        }
-        .play-img .full-img {
-            width: 60%;
-        }
+    .play-img {
+        width: 100%;
+        margin-top: 15px;
+        position: relative;
+        text-align: right;
+        padding-right: 80px;
+    }
+    .play-img .full-img {
+        width: 60%;
+    }
         
-        .side-img {
-            position: absolute;
-            width: 26%;
-            left: 20%;
-        }
+    .side-img {
+        position: absolute;
+        width: 26%;
+        left: 20%;
+    }
         
-        .play p {
-            margin-top: 24px;
-        }
+    .play p {
+        margin-top: 24px;
+    }
+    .catagories {
+        padding:70px 30px;
+        gap: 15px;
+    }
+    .catagories button img{
+        width: 30px;
+    }
+    
+    .catagories button {
+        font-size: 15px;
+        font-weight: 600;
+        padding: 5px;
+    }
+    .catagories button img {
+        margin-right: 5px;
+    }
+    footer{
+    padding: 60px;
+}
+.footer-link, .footer-logo, .footer-icon, .footer-condition{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.f-logo {
+    gap: 10px;/
+}
+
+.f-logo-title {
+    font-size: 25px;
+}
+.f-logo img {
+    width: 50px;
+    height: auto;
+}
+.footer-link, .footer-conditions{
+    padding: 30px;
+    gap:15px;
+} 
+.footer-link a, .footer-conditions a{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer-conditions{
+    padding-bottom: 20px;
+}
+footer  p{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0px 20px;
+}
+.footer-icon i{
+    font-size: 20px;
+}
+
 }
