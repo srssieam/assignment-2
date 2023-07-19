@@ -24,6 +24,18 @@ body{
     -webkit-background-clip: text;
     color: transparent;
 }
+.common-h {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.common-desc {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
 
 /* header styles */
 header{
@@ -132,8 +144,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     padding: 95px 240px;
 }
+
 .banner-bottom-content{
     text-align: right;
 }
@@ -160,11 +174,60 @@ nav{
     font-size: 32px;
     font-weight: 700;
 }
+
+/* game section styles */
+.game{
+    margin: 120px 240px;
+    text-align: center;
+}
+.game h2{
+    margin-bottom: 16px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.card-img{  
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-img span{
+    position: absolute;
+    display: none;
+}
+.card-img img{
+    width: 100%;
+}
+.card-img:hover img{
+    filter:grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+.card-img:hover span{
+    display: block;
+}
+.card p{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 24px;
+}
+
+
 /* style for small devices */
 @media screen and (max-width:576px){
     .btn{
         padding: 8px 16px;
         font-size: 14px;
+    }
+    .common-h {
+        font-size: 28px;
     }
     header {
         box-shadow:none;
@@ -294,7 +357,21 @@ nav{
         font-size: 18px;
         font-weight: 700;
     }
-
+    .game {
+        margin: 50px;
+        text-align: center;
+    }
+    .card-container {
+        grid-template-columns:1fr;
+        gap: 24px;
+        margin-top: 40px;    
+    }
+    .card p{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
 
 }
 
@@ -303,8 +380,9 @@ nav{
     .btn {
         padding: 15px 20px;
         font-size: 18px;
-        font-weight: 600;
-        border-radius: 48px;
+    }
+    .common-h {
+        font-size: 40px;
     }
     nav {
         flex-direction: column;
@@ -379,5 +457,23 @@ nav{
     
     .banner-bottom-content {
         padding: 0px 30px;
+    }
+    .game {
+        margin: 50px;
+        text-align: center;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin: 0 80px;
+        margin-top: 40px;
+    }
+    
+    .card p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 25px;
     }
 }
