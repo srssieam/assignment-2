@@ -199,6 +199,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .card-img span{
     position: absolute;
@@ -342,7 +343,9 @@ footer  p{
     text-align: center;
 }
 
-
+button{
+    cursor: pointer;
+}
 
 /* style for small devices */
 @media screen and (max-width:576px){
